@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query String Results</title>
+    <link rel="icon" type="image/png" href="../icons/icon16.png">
+    <link rel="stylesheet" href="../global/global.css">
+   
+    </script>
+</head>
+<body class="bg-ambient-lightest">
+
+    <div class="container my-4 p-6 mx-auto bg-ambient-dark text-base text-ambient-light rounded">
+
+        <div class="mb-8">
+            <h1 class="font-bold text-lg text-ambient-lightest mb-8">Query String Inspector</h1>
+            <div class="text-base">
+                <h2 class="mb-2 text-ambient-lightest">Full Link URL</h2>
+                <p class="text-primary break-all" id="full-link-box">
+                    <!-- Dynamically Insert the Full URL here -->
+                </p>
+            </div>
+        </div>
+
+        <div id="results-panel pb-4">
+            <h3 class="mb-4 text-ambient-lightest">Query String Parameters</h3>
+            <div id="results-table">
+
+                <div class="flex mb-2 font-bold text-ambient-lightest">
+                    <div class="flex-1 break-all">Key</div>
+                    <div class="flex-1 break-all">Value</div>
+                </div>
+                <!-- Dynamically insert the result key:value rows into here -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Load the scripts to listen and handle result message -->
+    <script type="text/javascript" src='./results.js'></script>
+
+</body>
+</html>

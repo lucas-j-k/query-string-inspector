@@ -1,0 +1,27 @@
+/*
+*   Content Styling - Style the icons, tooltips and focused links on the web page
+*   The Data-Theme is defined by the theme variable we define in content.js when creating the tooltips
+*   Use unset and important to try and override as many inherited in-page styles as possible to keep consistency
+*/
+
+.tippy-box[data-theme~='query-string-inspector'] button {
+    all: initial;
+    width: 40px !important;
+    height: 40px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    background-color: #f3b611 !important; 
+}
+
+
+.tippy-box[data-theme~='query-string-inspector'] img {
+    all: initial;
+    width: 40px !important;
+    height: 40px !important;
+    cursor: pointer !important;
+}
+
+.query-string-inspector-active-link {
+    background-color: #1E252C !important;
+    color: #f1e3be !important;
+}
