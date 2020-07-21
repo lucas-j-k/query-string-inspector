@@ -20,8 +20,9 @@
   "scripts": {
     "build:production": "NODE_ENV=production rollup -c --configProduction",
     "build:tailwind": "rollup -c --configTailwind",
-    "build:dev": "rollup -c --configDev",
-    "build:watch": "watch 'npm run build:dev' ./src"
+    "build:scripts": "rollup -c --configDev",
+    "watch": "watch 'npm run build:scripts' ./src", 
+    "build:development": "npm-run-all build:tailwind watch"
   },
   "author": "",
   "license": "ISC"
